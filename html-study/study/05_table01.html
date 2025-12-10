@@ -3,9 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./table.css">
   <title>Document</title>
 </head>
 <body>
-  
+  <!--
+  table 표(엑셀)
+  tr: 표의 row(가로 한줄)
+  td: 표의 dataSet(데이터) - tr안에 들어가있음
+  -->
+  <table>
+    <tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+    </tr>
+    <tr>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+    </tr>
+    <tr>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+    </tr>
+  </table>
+<br /><br />
+<!--
+각 표의 헤더를 만들어 줄수 있음
+thead: 헤더 부분
+tbody: 본문 내용
+th : 헤더(row 혹은 column) - scope 속성(권장사항): row, col
+tfoot: 본문 아래부분
+-->
+<table>
+
+<thead>
+  <th scope="col">운동</th>
+  <th scope="col">월</th>
+  <th scope="col">화</th>
+</thead>
+
+<tbody>
+  <tr>
+  <th scope="row">러닝</th>
+  <td>40분</td>
+  <td>60분</td>
+  </tr>
+
+  <tr>
+    <th scope="row">풀업</th>
+    <td>30분</td>
+    <td>20분</td>
+  </tr>
+</tbody>
+
+<tfoot>
+<th scope="row">총 시간</th>
+<td>70분</td>
+<td>80분</td>
+</tfoot>
+
+</table>
+
 </body>
 </html>
