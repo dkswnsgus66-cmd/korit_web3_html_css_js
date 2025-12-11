@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--input의 여러 타입들-->
+  <form action="#" method = "get">
+    <label for="username">아이디:</label>
+    <input type="text" id = "username" name="username"placeholder="아이디를 입력해라">
+    <br /><br />
+  </form>
+
+  <form action="#" method = "get">
+    <label for="password">비밀번호:</label>
+    <input type="password" id = "password" nam="password"placeholder="비밀번호를 입력해라">
+    <br /><br />
+  </form>
+
+  <form action="#" method = "get">
+    <label for="email">이메일:</label>
+    <input type="email" id = "email" name="email"placeholder="이메일을 입력해라">
+    <br /><br />
+  </form>
+
+  <form action="#" method = "get">
+    <label for="age">나이입력:</label>
+    <input type="number" id = "age" name="age"placeholder="나이를 입력해라" min ="1" max = "100">
+    <br /><br />
+    <button type="submit">제출</button>
+  </form>
+
+  <form>
+    <!-- 주어진 항목 중 다수를 선택 -->
+     <!-- 반드시 value를 기입해줘야한다  -->
+  <input type="cheakbox"name="skill"  value="java"> 자바
+  <input type="cheakbox" name="skill" value="python"> 파이썬
+  <input type="cheakbox" name="skill" value="javascript"> 자바스크립트
+  </form>
+   <br /><br />
+  <form>
+<!-- radio: 주어진 리스트 중에 하나를 선택-->
+ <!-- name 으로 그룹화 할수 있음 -->
+ <input name="a" type="radio" value ="1">1
+ <input name="a" type="radio" value ="2">2
+ <input name="b" type="radio" value ="3">3
+ <input name="b" type="radio" value ="4">4
+  </form>
+
+  <br /> <br />
+  <!--select요소: 드랍박스 리스트 중에 하나를 선택 -->
+
+  <form >
+<select name="fruit">
+
+<option value="apple"></option>
+<option value="banana"></option>
+<option value="kakao"></option>
+
+</select>
+  </form>
+
+  <br /> <br />
+<!-- textarea : 텍스트를 여러줄에 걸쳐서 작성할수 있게 하는  요소 -->
+  <form>
+
+    <textarea name="content" rows="10" cols="50">
+      
+    </textarea>
+
+    <button>전송</button>
+
+  </form>
+<!-- 미디어 관련 input-->
+
+ <form>
+
+  <label for="file">파일선택</label>
+  <input type="file" id="file" name="upload_file">
+
+ </form>
+
+</body>
+</html>

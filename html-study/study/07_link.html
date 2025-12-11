@@ -12,7 +12,8 @@ a태그: 클릭시 다른 주소로 디렉션 시켜주는 태그
 href: 디렉션 할 주소
 target: "_self": 그 창에서 디렉션(기본값) , "_blank"  : 새창에서 디렉션
 -->
-<a href="https://www.naver.com" target="_self">네이버로 이동</a>
+<a href="https://www.naver.com" target="_self">네이버로 이동
+</a>
 
 <a href="https://www.naver.com"
 target="_blank">네이버로 이동(새창)</a>
@@ -23,6 +24,24 @@ title= "네이버로 이동"
 width="30px"
 </a>
 
+<!-- a태그의 href속성에 # 태그의 id 를 기입하면
+ 해당 id 를 가진 태그로 순간이동 -->\
+ <a href="#target-50">50으로 이동</a>
+ <p id="container">
+ <!--script: 해당페이지에서 작동할 js 작성부-->
+ <script>
+  // container id 를 가진 p 태그를 찾고 변수에 담기
+for(let i = 1; i<=100 ; i++){
+  //  p태그를 js로 생성
+  const p = document.createElement("p");
+  // p 태그의 속성들 설정
+  p.id = `target-${i}`
+  p.textContent = `타겟${i}`
+  // 만든 p 태그를 container 하위로 넣는다
+  container.appendChild(p);
+}
+ </script>
+</p>
 
 </body>
 </html>

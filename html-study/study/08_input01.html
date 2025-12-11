@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--사용자로부터 입력을 받는 태그들-->
+  <!--form 태그안에 label 과 input 태그를 매칭시켜서
+  여러개를 배치할수 있다.-->
+
+  <form action="#">
+<!-- label의 for와 input 의 id를 맞춰서 매칭시켜준다-->
+    <label for="name">이름</label>
+    <input type="text" id="name">
+    <br />
+
+    <label for="age">나이</label>
+    <input type="text" id = "age">
+    <br /><br />
+
+    <button>제출</button>
+
+  </form>
+  <!--
+  form -> 여러 입력값을 그룹화 해서 제출하기 위한 태그
+  form 의 속성
+  action: form에 작성된 데이터들을 제출할 위치(주소) 지정
+  method: http 메서드를 의미한다(get , post ...)
+  -->
+  <form action="https://www.google.com/search" method="GET">
+
+    <label for="search-input">검색어</label>
+<input type="text" id = "search-input" name = "q"  placeholder ="구글에 검색" value="야호" disabled>
+
+<button>검색</button>
+<!--
+input의 속성들
+1. name - 해당 input에 입력한 데이터의 key 값
+*주의) 리액트 등의 SPA 에서는 사용 안하는 방식
+form의 method 가 get -> 쿼리스트링으로 ?name값=input에 적은값
+form의 method가 post -> body로 데이터가 전달됨(json x)
+2. type - text , number, password , email , date...
+3. placeholder - 미리보기(가이드라인)
+4. readonly: input애 들어간 데이터를 변경불가로 만듬
+5. disables: input 에 입력못하게 막음
+readonly와 disabled를 js 로 통제해서 좋은 ux를 만들수 있다.
+
+-->
+
+  </form>
+</body>
+</html>

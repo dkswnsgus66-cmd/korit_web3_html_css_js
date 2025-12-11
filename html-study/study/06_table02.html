@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./table.css">
+  <title>Document</title>
+</head>
+<body>
+<!--
+colspan: 열병합(좌우로 합치기)
+rowspan: 행병합(위아래로 합치기)  
+-->
+<h1>주간 학습표</h1>
+<table>
+      <thead>
+        <th scope="col">시간</th>
+        <th scope="col">월</th>
+        <th scope="col">수</th>
+        <th scope="col">금</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">오전1</th>
+          <td>파이썬</td>
+          <td>자바</td>
+          <td>자바스크립트</td>
+        </tr>
+
+        <tr>
+          <th scope="row">오전2</th>
+          <td>자바</td>
+          <td>자바스크립트</td>
+          <td>파이썬</td>
+        </tr>
+
+        <tr>
+          <th scope="row">오후1</th>
+          <td rowspan="2">파이썬</td>
+          <td colspan="2">자바</td>
+          
+        </tr>
+
+        <tr>
+          <th scope="row">오후2</th>
+          <td>자바</td>
+          <td>자바스크립트</td>
+        </tr>
+      </tbody>
+
+</table>
+
+</body>
+</html>
