@@ -1,0 +1,47 @@
+/* 모든 태그 선택 - 초기화용도*/
+*{
+  margin: 0;
+}
+/* 태그 선택자 */
+p{
+font-size: 20px;
+}
+
+/*  id선택자 -  
+한페이지(html문서) 안에서
+id속성은 유일무이해야한다 - unique 
+*/
+
+#main-title{
+  font-size:40px;
+  color:#292929
+}
+
+/* class 선택자
+태그에는 class 속성이 있음
+중복가능, 여러개 겹칠수 있음
+<p class="p-class1 p-class2 p-class3"></p>
+*/
+.p-class{
+  color: salmon;
+}
+
+.p-class2{
+  font-size: 50px;
+}
+
+/* 
+예) id 선택자로 color가 #292929이고,
+class 선택자로 color가 coral인 경우 -> 우선순위가 고려된다.
+
+기본규칙
+같은 출처에서 비교(같은 inline or link or embedding)
+출처우선순위 > 선택자우선 순위
+
+선택자 우선순위 (우선순위가 같으면 나중에 적용한게 이긴다.) 좁은범위로 특정될수록 우선 순위가 높다.
+1.#id
+2. .class
+3. 태그
+4. *
+
+*/
