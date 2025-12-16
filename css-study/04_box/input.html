@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <main class="settings">
+      <h1>환경설정</h1>
+      <section class="section">
+        <h2>계정</h2>
+
+        <div class="item">
+          <!-- label의 for와 inputd의 id를 맞추면하나의 요소처럼 행동한다
+                라벨을 클릭해도, input을 클릭한것처럼 행동 
+                -->
+          <label for="username">사용자이름</label>
+          <input type="text" id="username" placeholder="이름입력" />
+        </div>
+
+        <div class="item">
+          <label for="email">이메일</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="user@example.com"
+            disabled
+          />
+        </div>
+
+        <div class="item"></div>
+      </section>
+
+      <section class="section">
+        <h2>알림</h2>
+        <!-- class=""안에 한칸 띄우면 하나의 클래스에 2개를 가진다 -->
+        <div class="item toggle">
+          <input type="checkbox" id="emailNotify" />
+          <label for="emailNotify">알림받기</label>
+        </div>
+        <div class="item toggle">
+          <input type="checkbox" id="emailNotify" />
+          <label for="emailNotify">이메일받기</label>
+        </div>
+      </section>
+      <section class="section"></section>
+
+      <button class="save">저장</button>
+    </main>
+  </body>
+</html>

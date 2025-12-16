@@ -1,0 +1,45 @@
+.board {
+  width: 100%;
+  font-size: 14px;
+  /* table 관련 css 작성 */
+  /* boder-collapse  -> 경게선을 공유 */
+  border-collapse: collapse;
+  /* table layout 기본값 auto 
+ auto: 내용을 기준으로 좌우 폭 계산
+fixed -> th,td 폭을 지정가능
+-> 폭 지정시 실제 폭이 아닌 , 최소값을 지정하는것
+->여유 공간이 있다면, 폭의 크기를 비율로 나눠가져간다.
+*/
+  table-layout: fixed;
+}
+
+.board th,
+.board td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+.board thead th {
+  background-color: #eee;
+}
+/* 1번 컬럼지정 :번호  보드 안의 tr 안에 th중 1번, 보드 안의 tr 안에 td중 1번
+*/
+.board tr > th:nth-child(1),
+.board tr > td:nth-child(1) {
+  width: 30px;
+}
+/* 2번 컬럼지정 : */
+.board tr > th:nth-child(2),
+.board tr > td:nth-child(2) {
+  width: 200px;
+}
+/* 3번 컬럼지정 : */
+.board tr > th:nth-child(3),
+.board tr > td:nth-child(3) {
+  width: 100px;
+}
+/* 4번 컬럼지정 : */
+.board tr > th:nth-child(4),
+.board tr > td:nth-child(4) {
+  width: 80px;
+}
