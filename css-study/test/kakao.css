@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* 높이 === 브라우저 화면 */
+    height: 100vh;
+}
+.loginpage{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin-bottom: 40px;
+    font-size: 32px;
+    /* 이쁜폰트 -> 나중에 웹폰트 적용 */
+    font-weight: 400;
+}
+
+.login-box{
+    /* 540px 
+    % -> 부모의 크기
+    */
+width: 100%;
+/* 콘텐츠 + 패딩 + 보더 -> width */
+box-sizing: border-box;
+padding: 50px 70px;
+border: 1px solid #dbdbdb;
+}
+
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    width: 100%;
+    height: 40px;
+    /* 상 좌우 하 */
+    padding: 10px 0 8px;
+    border: none;
+    /* 및줄 입력창 */
+    border-bottom: 2px solid#b6b2b2;
+    outline: none;
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* 비밀번호 가독성 */
+.login-input[type="password"]{
+    letter-spacing: 0.5rem;
+}
+.login-form input::placeholder{
+letter-spacing: 0.05rem;
+}
+
+/* 포커스시 밑줄 강조 */
+.login-form input:focus{
+    border-bottom:2px solid black ;
+}
+
+.save-login{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    color: #777;
+}
+.save-login input{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.save-login label{
+    cursor: pointer;
+}
+
+
+
+.botton-group{
+    margin-top: 40px;
+}
+.botton-group button{
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-primary{
+background-color: #fee500;
+text-align: center;
+}
+.btn-primary:hover{
+    background-color: #c4b004;
+}
+
+.btn-scondery:hover{
+background-color: #e0e0e0;
+}
+.or-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.or-box::before,
+.or-box::after{
+    content:"";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #dbdbdb;
+}
+.login-links{
+margin-top: 25px;
+display: flex;
+align-items: center;
+/* 요소들 중 양끝은 좌우로 딱 붙히고
+나머지 요소들은 간격을 동일하게 분배
+*/
+justify-content: space-between;
+}
+
+.login-links a{
+    font-size: 14px;
+    color: #222;
+    /* a 태그 밑줄 삭제 */
+    text-decoration: none;
+
+
+}
+
+.link-group{
+        align-items: center;
+
+}
+.link-group a:nth-child(1)::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+    background-color: #dbdbdb;
+
+     
+}

@@ -1,66 +1,80 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- study 폴더에 있는 table.css를 가져오세요 link태그에 적용-->
-   <link rel="stylesheet" href="../study/table.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../study/table.css">
+    <title>Document</title>
 </head>
 <body>
-
-  <h1>주간 식당 메뉴표</h1>
-
-  <table>
-<thead>
-<th>구분</th>
-<th>월</th>
-<th>화</th>
-<th>수</th>
-<th>목</th>
-<th>금</th>
-</thead>
-
-<tbody>
-  <tr>
-    <th>점심</th>
-    <td>김치찌개<br />계란말이<br />샐러드</td>
-    <td>비빔밥<br />미소된장국</td>
-    <td rowspan ="2">휴무</td>
-    <td>제육볶음<br />콩나물국</td>
-    <td>카레라이스<br />양배추 샐러드</td>
-  </tr>
-
-  <tr>
-    <th>저녁</th>
-    <td>
-      <ul>
-        <li>돈까스</li>
-        <li>우동</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>된장찌개</li>
-        <li>고등어 구이</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>라면정식</li>
-        <li>만두</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>삼겹살</li>
-        <li>김치전</li>
-      </ul>
-    </td>
-  </tr> <!--나중에 데이터를 받아와서 넣기때문에ul li 를 써줌-->
-</tbody>
-
-  </table>
-  
+    <h1>주간 식당 메뉴표</h1>
+    <table>
+        <thead>
+            <th scope="col">구분</th>
+            <th scope="col">월</th>
+            <th scope="col">화</th>
+            <th scope="col">수</th>
+            <th scope="col">목</th>
+            <th scope="col">금</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">점심</th>
+                <td>
+                    <ul>
+                        <li>김치찌개</li>
+                        <li>계란말이</li>
+                        <li>샐러드</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>비빔밥</li>
+                        <li>미소된장국</li>
+                    </ul>
+                </td>
+                <td rowspan="2">휴무</td>
+                <td>
+                    <ul>
+                        <li>제육볶음</li>
+                        <li>콩나물국</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>카레라이스</li>
+                        <li>양배추샐러드</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">저녁</th>
+                <td>
+                    <ul>
+                        <li>돈까스</li>
+                        <li>우동</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>된장찌개</li>
+                        <li>고등어구이</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>라면정식</li>
+                        <li>만두</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>삼겹살</li>
+                        <li>김치전</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

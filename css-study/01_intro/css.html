@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- link style -->
-  <link rel="stylesheet" href="./style.css">
-  <!-- embedding style -->
-   <style>
-    h2{
-      color: blue;
-    }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link-style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- embedding-style -->
+    <style>
+        h2 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-  <!-- 
-  1. css(cascading style sheet)
- - 단독 사용 불가능 html과 항상 함깨 사용되어야한다.
- - html과 같은 구조화된 문서를 어떻게 화면에 그릴지 선언하는 언어
- 
- 2. css 선언방법
- 선택자 {
- 속성1: 값 ;
- 속성2:값;
- }
- 선택자(selector): 스타일을 적용하고자 하는 html태그를 지정하는 방식
-속성: 선택자로 지정한 html  태그에 변경할 스타일을 지정
-값: 속성에 적용할 값 , 크기, 색상 ... 지정
+    <!-- 
+    1. css(cascading style sheet)
+    - html과 같은 구조화된 문서를 어떻게 화면에 그릴지 선언하는 언어
+    - 단독 사용x -> html과 항상 함께 사용되어야한다.
+    
+    2. css 선언방법
+    선택자 {
+    속성1: 값;
+    속성2: 값;
+    }
+    선택자(selector): 스타일을 적용하고자 하는 html태그를 지정하는 방식
+    속성: 선택자로 지정한 html 태그에 변경할 스타일을 지정
+    값: 속성에 적용할 값, 크기, 색상...지정
 
-3. html에  css 적용방식 (우선순위가 존재)
-1. inline - style: 태그에 style을 지정
-2. embedding - style:  html head에 style 정의
-3. link - style : html외부 css 파일을 로드해서 사용
-우선순위 inline > embedding > link
+    3. html에 css 적용 방식(우선순위가 존재)
+        1. inline-style: 태그에 style을 정의
+        2. embedding-style: html head에 style 정의
+        3. link-style: html 외부 css 파일을 로드해서 사용
+        Inline > embedding > link
+    -->
 
-  -->
-<h1 style="color: aqua">ㄴㅁㅇㄹㅇㄴㅁㄹ</h1>
-<h2>ㄴㄹㅇㅎㅁㄴㄹㅇ</h2>
-
-<!-- inline style -->
-<h3 style= "color: green;">ㄴㄹㅇㅁㅎㄴㅇㅎ</h3>
-<!-- 나중에 적용된 스타일이 처음에 적용된 스타일을 덮어쓴다 -->
-<h1 style="color: black">dfgdfg</h1>
+    <h1>어쩌고 저쩌고</h1>
+    <h2>어쩌고 저쩌고</h2>
+    <!-- inline-style -->
+    <h3 style="color: green">어쩌고 저쩌고</h3>
 </body>
 </html>

@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./box2.css">
     <title>쇼핑몰</title>
-    <link rel="stylesheet" href="./box02.css" />
-  </head>
-  <body>
+</head>
+<body>
     <section class="product-section">
-      <nav class="category-nav">
-        <li>카테고리1</li>
-        <li>카테고리2</li>
-        <li>카테고리3</li>
-        <li>카테고리4</li>
-      </nav>
-      <ul class="product-list">
-        <li class="product-item">
-          <div class="product-img">상품 이미지1</div>
-          <div class="product-info">
-            <div class="priduct-name">상품이름</div>
-            <strong class="product-price">상품가격</strong>
-          </div>
-        </li>
-        <li class="product-item">
-          <div class="product-img">상품 이미지2</div>
-          <div class="product-info">
-            <div class="priduct-name">상품이름</div>
-            <strong class="product-price">상품가격</strong>
-          </div>
-        </li>
-        <li class="product-item">
-          <div class="product-img">상품 이미지3</div>
-          <div class="product-info">
-            <div class="priduct-name">상품이름</div>
-            <strong class="product-price">상품가격</strong>
-          </div>
-        </li>
-        <li class="product-item">
-          <div class="product-img">상품 이미지4</div>
-          <div class="product-info">
-            <div class="priduct-name">상품이름</div>
-            <strong class="product-price">상품가격</strong>
-          </div>
-        </li>
-      </ul>
+        <nav class="category-nav">
+            <ul>
+                <li>카테고리1</li>
+                <li>카테고리2</li>
+                <li>카테고리3</li>
+                <li>카테고리4</li>
+            </ul>
+        </nav>
+        <ul class="product-list">
+            <!-- 
+                li는 반복되고있음  
+                -> 하나를 정의해서 반복문가능
+                -> 컴포넌트라고 한다.
+            -->
+            <li class="product-item">
+                <div class="product-img">상품이미지</div>
+                <div class="product-info">
+                    <div class="product-name">상품이름</div>
+                    <strong class="product-price">상품가격</strong>
+                </div>
+            </li>
 
-      <!-- li는 반복되고 (자바에서 데이터를 가져와서 넣음)_ 있음 -> 하나를 정의해서 반복문 가능 -> 컴포넌트라고 한다
-      -->
+            <li class="product-item">
+                <div class="product-img">상품이미지</div>
+                <div class="product-info">
+                    <div class="product-name">상품이름</div>
+                    <strong class="product-price">상품가격</strong>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">상품이미지</div>
+                <div class="product-info">
+                    <div class="product-name">상품이름</div>
+                    <strong class="product-price">상품가격</strong>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">상품이미지</div>
+                <div class="product-info">
+                    <div class="product-name">상품이름</div>
+                    <strong class="product-price">상품가격</strong>
+                </div>
+            </li>
+        </ul>
     </section>
-  </body>
+    
+</body>
 </html>

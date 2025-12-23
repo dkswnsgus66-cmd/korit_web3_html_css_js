@@ -1,0 +1,98 @@
+/* 전체 레이아웃 */
+body {
+    /* body태그에는 기본 마진 8px 존재 */
+    margin: 0;
+    padding: 0;
+}
+
+.product-section {
+    /* px로 고정 - vw 권장 */
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* 상단 카테고리 네비게이션 메뉴 */
+.category-nav ul {
+    padding: 0;
+    /* 위 오른쪽 아래 왼쪽 */
+    margin: 20px 0;
+}
+
+.category-nav li {
+    /* li의 배치는 기본값이 block -> 위아래로 쌓임 */
+    /* 
+    inline: 크기지정x, 좌우공간공유
+    block: 크기지정o, 좌우공간독점
+    inline-block: 크기지정o, 좌우공간공유
+    */
+    display: inline-block;
+    margin-right: 30px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* :hover 마우스를 요소에 올렸을때 */
+.category-nav li:hover {
+    background-color: #eee;
+}
+
+/* 상품 리스트 */
+.product-list {
+    /* inline-block시 공백이 생성됨
+       font-size 0을 지정하면 해당 공백이 사라짐
+    */
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    /* inline-block -> 좌우로 나열 */
+    display: inline-block;
+    width: 200px;
+    /* 카드 간격 */
+    margin: 0 15px 30px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 상품 이미지 박스 */
+.product-img {
+    /* 100% -> 부모의 크기를 100% 가져오겠다 */
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+
+    /* 가운데 정렬 - flex버전(나중에) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 애니메이션 - trainsition(나중에) */
+    transition: transform 0.2s;
+}
+
+/* 
+.product-item:hover > .product-img
+product-item에 마우스가 올라가면
+그 직계자식인 product-img가
+*/
+.product-item:hover > .product-img {
+    /* 요소 확대 1.02배 */
+    transform: scale(1.02);
+}
+
+.product-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: 700;
+    color: red;
+}

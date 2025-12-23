@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+main {
+    width: 80vw;
+    margin: 50px auto;
+}
+
+.board {
+    /* board 부모 크기 전체 물려받음 -> 80vw */
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 16px;
+}
+
+.board th,
+.board td {
+    /* 
+    테이블에서 위아래 폭은 height 지정x 
+    -> 보통 위아래 padding으로 조절
+    */
+    padding: 10px 8px;
+    border: none;
+    /* 1,2,3,4,5,6,7,8,9,a,b,c,d,e,f */
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.board thead th {
+    background-color: #eee;
+    border-bottom: 2px solid #ccc;
+}
+
+.board th:nth-child(1),
+.board td:nth-child(1) {
+    width: 70px;
+}
+
+.board th:nth-child(2) {
+    width: 200px;
+}
+
+.board td:nth-child(2) {
+    width: 200px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.board th:nth-child(3),
+.board td:nth-child(3) {
+    width: 120px;
+}
+
+.board th:nth-child(4),
+.board td:nth-child(4) {
+    width: 140px;
+}
+
+.board th:nth-child(5),
+.board td:nth-child(5) {
+    width: 90px;
+}
+
+.board tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.board tbody tr:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+/* bit.ly/koreait-web */

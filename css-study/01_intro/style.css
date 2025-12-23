@@ -1,3 +1,7 @@
-h1{
-  color: red;
+h1 {
+    color: red;
+}
+/* 나중에 적용된 스타일이 처음에 적용된 스타일을 덮어쓴다 */
+h1 {
+    color: black;
 }

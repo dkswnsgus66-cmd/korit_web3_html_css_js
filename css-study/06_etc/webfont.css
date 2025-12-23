@@ -1,0 +1,33 @@
+/* 웹 폰트란 브라우저에게 "이런 글꼴도 있다" 라고 알려주는 것 */
+/* 폰트 등록 */
+
+/* font-face -> 폰트등록 */
+@font-face {
+    /* css에서 우리가 사용할 글꼴이름 지정(임의로 지정가능) */
+    font-family: 'our-font1';
+    /* 실제 폰트 파일(ttf,woff2..) 위치 */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+    /* 폰트굵기 (normal = 400) */
+    font-weight: normal;
+    /* 폰트 로딩이 늦으면 기본글꼴로 보여주거나 나중에 교체 */
+    font-display: swap;
+}
+
+h2{
+    /* Arial 폰트를 쓸수없는경우 대체할수있는기능 */
+    font-family: our-font1,Arial;
+}
+/* 실제 file을 등록 */
+@font-face{
+    font-family: "our-font2";
+    /* src 상대경로 지정*/
+    src: url(./BagelFatOne-Regular.ttf);
+}
+
+p{
+    font-family: 'sasd',sans-serif;
+}
+@font-face {
+    font-family: "sasd";
+    src: url(./Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}

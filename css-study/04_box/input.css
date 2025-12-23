@@ -1,95 +1,101 @@
 .settings {
-  width: 450px;
-  margin: 50px auto;
-  font-size: 14px;
+    width: 450px;
+    margin: 50px auto;
+    font-size: 14px;
 }
+
 .settings h1 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .section {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .section h2 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #dbdbdb;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
 }
+
 .item {
-  /* 및부분 띄우기 */
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
-.label {
-  /* 한줄 차지 */
-  display: block;
-  font-size: 12px;
-  /* 굵기 */
-  font-weight: 500;
-  margin-bottom: 3px;
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 3px;
 }
+
 /* 속성 선택자 - [속성='값'] 으로 선택할 수 있다 */
 input[type="text"],
 input[type="email"] {
-  /* 부모의 좌우폭 */
-  width: 100%;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
 
-  border: 1px solid #dbdbdb;
-  border-radius: 4px;
-  padding: 5px;
-}
-/* input이 선택 (클릭 tab)으로 되었을때 */
+/* input이 선택(클릭, tab으로)됬을때 */
 input:focus {
-  outline: none;
-  border-color: #999;
+    outline: none;
+    border: 1px solid #999;
 }
-/*  태그 속성*/
+
+/* 태그 속성 */
 input:disabled {
-  background-color: #fff;
-  color: #999;
-  /* 
-자주쓰는 cursor 값
-1. pointer - 검지손가락으로 누르는 모양
-2. default - 기본마우스
-3. not-allowed - 금지모양
-*/
-  cursor: not-allowed;
+    background-color: #fff;
+    color: #999;
+    /* 
+    자주쓰는 cursor 값 
+    1. pointer - 검지손가락으로 누르는 모양
+    2. default - 기본 마우스
+    3. not-allowed - 금지 모양
+    */
+    cursor: not-allowed;
 }
 
 /* 하나의 태그가 여러 클래스를 가지는 경우 */
-/* item 클래스와  toggle 클래스 모두 가지고 있는 경우 */
+/* item 클래스와 toggle 클래스 모두 가지고 있는 경우 */
 .item.toggle {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 /* 형제 선택자 */
-/* type이 checkbox인 input 기준으로 바로뒤에 발견되는 lable */
-/* 조건 
+/* type이 checkbox인 input 기준으로 
+바로 뒤에 발견되는 label태그 */
+/* 조건
 1. 반드시 형제관계
-2. 중간에 다른 요소가 끼면 안된다
+2. 중간에 다른 요소가 끼면 x
 */
 input[type="checkbox"] + label {
-  margin-left: 8px;
-  cursor: pointer;
+    margin-left: 8px;
+    cursor: pointer;
 }
 
 /* 
-바로 뒤에 있는 형제 전부
-type이 checkbox 인 input이 cheked상태일때 
-그 뒤에 나오는 lable들
+뒤에 있는 형제 전부
+type이 checkbox인 input이 checked 상태일때
+그 뒤에 나오는 label들
 */
 input[type="checkbox"]:checked ~ label {
-  color: #49e;
+    color: #4499ee;
+    font-weight: 700;
 }
 
 .save {
-  width: 100%;
-  padding: 8px;
-  background-color: #4499ee;
-  color: #fff;
+    width: 100%;
+    background-color: #4499ee;
+    color: #fff;
 
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 .save:hover {
-  background-color: #3377bb;
+    background-color: #3377bb;
 }
