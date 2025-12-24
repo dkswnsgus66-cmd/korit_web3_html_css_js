@@ -77,8 +77,8 @@ const finish = (finalData) => {
 
 // 흐름연결 (콜백안에 콜백) // 유지보수 힘듬
 // Promise 객체로 해결(나중에)
-ButtonClick(() => {
-    validate(data, ()=>{
-        finish(data);
-    })
-})
+// ButtonClick(() => {
+//     validate(data, ()=>{
+//         finish(data);
+//     })
+// })
