@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input 을 다루는 DOM API -->
+     <input type="text" class="todo-input">
+     <button class="todo-btn">등록</button>
+     <ul class ="todo-list"></ul>
+</body>
+<script>
+    const todoInput = document.querySelector(".todo-input");
+    const todoBtn = document.querySelector(".todo-btn");
+    const todoUl = document.querySelector(".todo-list");
+
+    // 버튼이 클릭되는지 계속 감시해야함(while)
+    // addEventListener ("이벤트 이름", 이벤트가 일어났을때 실행할 함수)
+    todoBtn.addEventListener("click",()=>{
+        // 클릭이 되면~ 
+        // input에 입력된 값을 가져와서
+         const inputVal = todoInput.value;
+         if(inputVal === ""){
+            alert("입력값은 비어있을수 없어요");
+            return;
+         }
+         // ul 안에 li 태그를 주입 
+         todoUl.innerHTML += `<li>${inputVal}</li>`;
+
+         // 입력창 초기화
+         todoInput.value = "";
+    });
+</script>
+</html>

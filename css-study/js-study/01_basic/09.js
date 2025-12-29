@@ -119,7 +119,8 @@ console.log(newProduct);
 // 얕은복사 문제점
 // js에서 SPREAD 사용시 1단계까지만 깊은복사
 // 2단계부터는 참조값만 복사(얕은복사)
-newProduct.option.color="실버";
+newProduct.option.color="실버";// 2단계부터는 얕은복사라서 실버로 변경됨
 product1.price = 100000; // 1단계는 깊은복사라서 변경되지 않는다
-console.log(product1);
-console.log(newProduct);
+console.log(product1); 
+console.log(newProduct);// newProduct의 price는 변경이 안됨(깊은복사)
+

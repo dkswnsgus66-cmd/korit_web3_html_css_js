@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1 class="title">
+    <section class="list">
+        <ul></ul>
+    </section>
+</body>
+<script>
+    // h1 태그에 "쇼핑리스트 "텍스트 주입
+    const products = [
+        {name:"사과",count: 2},
+        {name:"수박",count: 1},
+        {name:"치토스",count: 5},
+        {name:"실비김치",count: 1}
+    ]
+    const h1 = document.querySelector(".title");
+    h1.innerText = "쇼핑리스트";
+    const myUl = document.querySelector(".list ul");
+    // forEach((products)=>{
+    //     product.innerHTML+=
+    //     `<ul>${products.name}</ul>
+    //     <ul>${products.count}</ul>`;
+       
+    // });
+
+    for(let product of products){
+         product.innerHTML +=
+
+         ` <li>${products.name},${products.count}개</li> `;
+    };
+</script>
+</html>

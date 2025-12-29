@@ -21,8 +21,24 @@
     })
 
     console.log(filteredTodos.length);
- 
-     
  }
+
+ // 각 객체에 리턴으로 title,completed 필드만 남기고 제거
+//  const mappedTodos = filteredTodos.map((todo)=>{
+//     const {title,completed} = todo;
+//     return {
+//         title : title,
+//         completed: completed
+//     }
+     // 제거된 [js객체들]을 return
+    // return mappedTodos;
+    return todos.filter((todo)=>todo.userId === targetId).map((todo)=>{
+        return{
+            title:todo.title,
+            completed:todo.completed
+        }
+    });
+//  })
     
-     
+     const todos = await getTodosByUserId(1);
+     console.log(todos);

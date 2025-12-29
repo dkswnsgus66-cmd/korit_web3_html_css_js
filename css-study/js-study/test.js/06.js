@@ -34,6 +34,7 @@ const todoIds = [1,2,3,4,5];
 const 투두들 = todoIds.map((id)=>{
     return gettodoById(id);
 });
+
 // 병렬실행
 todos = await Promise.all(투두들);
 console.log(todos.map((todo)=>{

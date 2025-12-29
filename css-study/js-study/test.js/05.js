@@ -82,18 +82,13 @@ const product2 =products2.map((p)=>{
     // pInfo -> stock 제외한 나머지
     // 새로운 객체를 return -> 그 객체에 stock 값을 참조해서 isAvailable추가
     const {stock,...pInfo} = p;
-
     const isStockOver = stock > 0;
-
     return {
         ...pInfo,
         isAvailable:isStockOver
     }
     
 });
-
-
-
 console.log(product2);
 
 

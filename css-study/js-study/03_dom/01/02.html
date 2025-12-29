@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./table.css">
+</head>
+<body>
+    <h1 class="noticeTtitle"></h1>
+    <table class="notice">
+        <thead>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일자</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+<script>
+    // h1 태그안에 "공지사항" 텍스트 주입
+    // tbody 안에 아래의 데이터를 HTML 객체로 변환하여 주입
+    const posts =[
+        {id:1, title:"공지1",author:"관리자1",createAt:"2025-01-01"},
+        {id:2, title:"공지2",author:"관리자2",createAt:"2025-01-02"},
+        {id:3, title:"공지3",author:"관리자3",createAt:"2025-01-03"},
+        {id:4, title:"공지4",author:"관리자4",createAt:"2025-01-04"}
+    ]
+    const h1 = document.querySelector("h1");
+    h1.innerText = "공지사항";
+
+    const tbody = document.querySelector(".notice tbody");
+
+    // for(let post of posts){
+    //    const myTr = document.createElement("tr");
+    //    const postValues = Object.values(post);
+    //    console.log(postValues);
+
+    //    for(let val of postValues){
+    //     let myTd = document.createElement("td");
+    //     myTd.innerText = val;
+    //     myTr.appendChild(myTr);
+    //    }
+    //     tbody.appendChild(myTr);
+    // }
+
+for (let post of posts){
+    tbody.innerHTML += 
+    `<tr>
+        <td>${post.id}</td>
+        <td>${post.title}</td>
+        <td>${post.author}</td>
+        <td>${post.createAt}</td>
+    </tr>`;
+};
+
+posts.forEach((post)=>{
+    tbody.innerHTML +=
+    `<tr>
+        <td>${post.id}</td>
+        <td>${post.title}</td>
+        <td>${post.author}</td>
+        <td>${post.createAt}</td>
+    </tr>`;
+});
+
+
+</script>
+</html>

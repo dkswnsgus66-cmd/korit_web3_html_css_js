@@ -33,6 +33,7 @@ const getUserById = (userId)=>{
 return userPromise;
 }
 
+
 getUserById(1)
 .then((user)=>{
     console("데이터 수신");
@@ -41,4 +42,4 @@ getUserById(1)
 })
 .catch((e)=>{
     console.log(e.messege);
-})
+});

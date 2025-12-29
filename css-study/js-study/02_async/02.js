@@ -8,23 +8,23 @@ let a = (value)=>{
 
     },3000);
     return value;
-}
+};
 
 let b = (value)=>{
     console.log("b 호출");
     setTimeout(()=>{
         value += 5;
- return value;
+
     },1000);
     return value;
-}
+};
 
 let c = (value) =>{
     console.log("c 호출")
     setTimeout(()=>{
         console.log(`결과: ${value}`)
     },2000);
-}
+};
 
 // let result = a(10);
 // result = b(result);
@@ -39,7 +39,7 @@ a = (v,callback) =>{
         callback(v + 5); // 콜백함수로 데이터가 전달된다.
     },3000)
     // 리턴 x -> 리턴은 함수의 결과인데 그걸 콜백으로 넘겼기 때문
-}
+};
 
 b = (v,callback) =>{
     console.log("b호출")
@@ -47,14 +47,14 @@ b = (v,callback) =>{
         callback(v+5);
 
     },1000)
-}
+};
 c = (v) =>{
-    console.log("b호출")
+    console.log("c호출")
     setTimeout(()=>{
         console.log(`결과: ${v}`)
 
     },1000)
-}
+};
 
 
 // 비동기와 동기가 혼재되어 있을때 

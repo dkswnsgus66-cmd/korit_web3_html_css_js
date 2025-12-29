@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <div>
+        <input type="text" id="username" placeholder="아이디">
+        <button class="cheakbutton">중복체크</button>
+    </div>
+    <div>
+        <input type="text" id="password" placeholder="비밀번호">
+    </div>
+    <button class="loginbutton">로그인</button>
+</body>
+<script>
+    const users = [
+        {username:"admin",password:"1234"},
+        {username:"user1",password:"1234"},
+        {username:"user2",password:"1234"},
+        {username:"user3",password:"1234"}
+        ];
+
+        // id와 pw를 입력
+
+        // id 와 password를 입력받아서 
+
+        // 해당데이터가 users 배열에 있는 객체데이터와 일치할경우
+
+        // alert("로그인성공"),일치하지 않을경우 로그인 실패
+    const usernameInput = document.querySelector("#username");
+    const passwordInput = document.querySelector("#password");
+ 
+
+
+
+
+    // cheakbutton.addEventListener("click", ()) => {
+
+    //     const username = usernameInput.value;
+    //     const password = passwordInput.value;
+    //    alert(`${username},${password}`);
+
+    //     alert("로그인 버튼 클릭");
+
+    //     let isLoginSuccess = false;
+    //     // if(username == users.username || password == users.password){
+    //     //     let isLoginSuccess = isLoginSuccess.map()=>{
+    //     //         return true;
+    //     //     };
+    //     // }
+    //     //  순회하면서 대조
+
+    //     for (let user of users){
+    //         const {username,password}  = user;
+    //         const isSameId = myUsername === username
+    //         const isSamePw = myUserpassword === password;
+
+    //     // find() 쓰는법
+    //     // return값이 true인 객체가 있는지 검사
+    //    isLoginSuccess = users.find((user)=>{
+    //         const {username,password} = user;
+    //         const isSameId = myUsername === username
+    //         const isSamePw = myUserpassword === password;
+    //         return isSameId && isSamePw;
+    //     });
+
+    //     if(isLoginSuccess){
+    //         alert("로그인 성공")
+    //     }else{
+    //         alert("로그인 실패")
+    //     }
+    // };
+
+    const cheakbutton = document.querySelector(".cheakBtn");
+    // users에 있는 user들의 username과 중복이면 alert("중복입니다")
+    // 중복아니면 alert ("사용할수 있습니다.")
+
+
+
+    cheakbutton.addEventListener("click",()=>{
+        const username = usernameInput.value;
+        
+    for(let user of users){
+        const user객체 = user;
+     }
+        if(username == user객체.username){
+            alert("중복입니다.");
+        }else{
+            alert("맞아요.");
+        }
+    });
+</script>
+</html>
